@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="96.901">
+    <testcase classname="US01 Demoqa Form Sayfası Pozitif Negatif Testler" name="TC_01 Kullanıcının zorunlu alanları doldurarak başarılı olarak formu onaylayabilmesi" time="30.872">
+        <system-out>
+            <![CDATA[Given Kullanici "Url"'e gider...............................................passed
+And Kullanici Name textbox'ini girer........................................passed
+And Kullanici eposta adresini girer.........................................passed
+And Kullanici cinsiyet'ini secer............................................passed
+And Kullanici telefon numarasini girer......................................passed
+And Kullanici dogum tarihini secer..........................................passed
+And Kullanici subjects textbox'ini girer....................................passed
+And Kullanici hobi checkbox'ini secer.......................................passed
+And Kullanici resim ekler...................................................passed
+And Kullanici adress textbox'ini doldurur...................................passed
+And Kullanici eyalet secer..................................................passed
+And Kullanici sehir secer...................................................passed
+And Kullanici submit butonuna tiklar........................................passed
+Then Kullanici basarili olarak kayit gonderdigini test eder.................passed
+And Kullanici sayfayi kapatir...............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Demoqa Form Sayfası Pozitif Negatif Testler" name="TC_02 Kullanıcın geçersiz email adresi ile kayıt gönderememesi" time="33.353">
+        <system-out>
+            <![CDATA[Given Kullanici "Url"'e gider...............................................passed
+And Kullanici Name Surname textbox'ini bos birakir..........................passed
+And Kullanici eposta adresini girer.........................................passed
+And Kullanici cinsiyet bolumunde secim yapmaz...............................passed
+And Kullanici telefon numarasini girer......................................passed
+And Kullanici dogum tarihini secer..........................................passed
+And Kullanici subjects textbox'ini girer....................................passed
+And Kullanici hobi checkbox'ini secer.......................................passed
+And Kullanici resim ekler...................................................passed
+And Kullanici adress textbox'ini doldurur...................................passed
+And Kullanici eyalet secer..................................................passed
+And Kullanici sehir secer...................................................passed
+And Kullanici submit butonuna tiklar........................................passed
+Then Kullanici eksik bilgiler ile kayit gonderilemedigini test eder.........passed
+And Kullanici sayfayi kapatir...............................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US01 Demoqa Form Sayfası Pozitif Negatif Testler" name="TC_03 Kayit Olma Testi" time="32.093">
+        <system-out>
+            <![CDATA[Given Kullanici "Url"'e gider...............................................passed
+And Kullanici Name textbox'ini girer........................................passed
+And Kullanici gecersiz email adresi girer...................................passed
+And Kullanici cinsiyet'ini secer............................................passed
+And Kullanici telefon numarasini girer......................................passed
+And Kullanici dogum tarihini secer..........................................passed
+And Kullanici subjects textbox'ini girer....................................passed
+And Kullanici hobi checkbox'ini secer.......................................passed
+And Kullanici resim ekler...................................................passed
+And Kullanici adress textbox'ini doldurur...................................passed
+And Kullanici eyalet secer..................................................passed
+And Kullanici sehir secer...................................................passed
+And Kullanici submit butonuna tiklar........................................passed
+Then Kullanici eksik bilgiler ile kayit gonderilemedigini test eder.........passed
+And Kullanici sayfayi kapatir...............................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
